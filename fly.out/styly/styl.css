@@ -1,0 +1,50 @@
+ul {
+    width: 800px;
+    height: 40px;
+    position: relative;
+}
+li{
+    list-style-type: none;
+}
+ul ul {
+    position: relative;
+    margin-left: 38px;
+    top: -44px;
+    display: none
+}
+
+ul li {
+    border: 3px;
+    border-color: black;
+    border-style: solid;
+    padding: 0;
+    height: 40px;
+    width: 80px;
+}
+ul li:hover {
+    border-style: dashed;
+    border-radius: 20% 20% 20% 20%;
+    background-color: gainsboro;
+    border-color: maroon;
+}
+ul li:hover ul{
+    display: block;
+}
+ul li ul {
+    margin-top: 23px;
+    margin-left: none;
+}
+ul li ul li:first-of-type{
+    margin-top: 24px;
+}
+
+ul ul ul, ul li:hover ul ul {
+    display: none;
+}
+
+ul li:hover ul li:hover ul {
+    display: block;
+}
+li{
+    text-align: center;
+}
